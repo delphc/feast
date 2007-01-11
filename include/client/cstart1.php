@@ -64,6 +64,6 @@ if ($gnobdays == 0)
 $boutput = $l_nocbday;
 echo $boutput;
 ?></td></tr></table><br />
-</div></div><div class="fbt"><a href="http://www.fireboytech.com">2008 &copy; fireboy technologies</a></div>
+</div></div>
 </div></div></div>
 </center></body></html>

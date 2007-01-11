@@ -144,5 +144,5 @@ maxlength="6" size="6" type="text">
 </div><div class="snd"><input type="hidden" name="relDo" id="relDo" value="add"><input type="hidden" name="pass_mid" value="<?php echo $pass_mid; ?>"><input type="submit" value="Add Relationship &raquo;" /><input type="button" onClick="document.getElementById('relDo').value='done';document.mowcreate.submit(); return false;" value="No More Relationships&raquo;" /></div></th></tr><tr>
 <td rowspan="2"><img src="p1/apl.gif" width="138"height="150" border="0"alt="FeastDB" /></td>
 <td class="gr"> </td></tr></table></form></div><div class="fbt"><a 
-href="http://www.fireboytech.com">2008 © fireboy technologies</a></div>
+href="http://www.fireboytech.com"></a></div>
 </div></div></div></center></body></html>

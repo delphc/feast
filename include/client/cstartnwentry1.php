@@ -902,5 +902,5 @@ include "../include/client/cnew1.php";
 ?></th></tr><tr>
 <td rowspan="2"><img src="theme/default/p1/apl.gif" width="138"height="150" border="0"alt="FeastDB" /></td>
 <td class="gr"> </td></tr></table></form></div><div class="fbt"><a 
-href="http://www.fireboytech.com">2008 © fireboy technologies</a></div>
+href="http://www.fireboytech.com"></a></div>
 </div></div></div></center></body></html>
