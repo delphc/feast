@@ -1,2 +1,3 @@
 *~
 *.sw?
+include/config/mysql_login.php
