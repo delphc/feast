@@ -26,7 +26,7 @@ $currentMonth = date('m');
 //$currentMonth="12";
 $gnobdays = 0;
 for ($i = 0; $i <= 6; $i++) {
-include '/var/www/feastdb/include/config/mysql_login.php';
+include '/srv/http/feastdb/include/config/mysql_login.php';
 mysql_connect("localhost", $mysqluser, $mysqlpass);
 mysql_select_db("mowdata");
 $query = "SELECT * FROM volunteer WHERE bday LIKE '%" . 

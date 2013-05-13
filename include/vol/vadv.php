@@ -15,7 +15,7 @@ href="?go=search"><span class="h6"> <br></span>search</a></li></ul></div></div>
 <td class="gr">
 <img src="theme/default/p1/arw.gif" width="7" height="15" border="0" alt="" /></td>
 <th class="gd" rowspan="2" colspan="2"><div id="nf"><?
-include '/var/www/feastdb/include/config/mysql_login.php';
+include '/srv/http/feastdb/include/config/mysql_login.php';
 mysql_connect("localhost", $mysqluser, $mysqlpass);
 mysql_select_db("mowdata");
 $query = "SELECT * FROM member WHERE first_name LIKE '" . "%st%'";

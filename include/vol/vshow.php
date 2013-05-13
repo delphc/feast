@@ -10,7 +10,7 @@ href="bio.php"><span class="h6">&nbsp;<br></span>adv.&nbsp;search</a></li></ul><
 <div id="cn" class="w8"><div id="ca"><img src="theme/default/p1/aplo.gif" width="164" height="66" border="0" alt="" /></div>
 <div id="shw"><?php
 
-include '/var/www/feastdb/include/config/mysql_login.php';
+include '/srv/http/feastdb/include/config/mysql_login.php';
 mysql_connect("localhost", $mysqluser, $mysqlpass);
 mysql_select_db("mowdata");
 $query = "SELECT * FROM member

@@ -1,6 +1,6 @@
 <?php
 if ($_POST['mid'] > 20) {
-include '/var/www/feastdb/include/config/mysql_login.php';
+include '/srv/http/feastdb/include/config/mysql_login.php';
 mysql_connect("localhost", $mysqluser, $mysqlpass);
 mysql_select_db("mowdata");
 
