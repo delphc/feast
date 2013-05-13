@@ -1,8 +1,8 @@
 <?php
 
-include "/srv/http/feastdb/include/showerror.php";
-require_once('/srv/http/feastdb/public/tcpdf/config/lang/eng.php');
-require_once('/srv/http/feastdb/public/tcpdf/tcpdf.php');
+include "/var/www/feastdb/include/showerror.php";
+require_once('/var/www/feastdb/public/tcpdf/config/lang/eng.php');
+require_once('/var/www/feastdb/public/tcpdf/tcpdf.php');
 //use to create newline when generating pdfs
 $cReturn = "\n";
 $resIngNo = 0;
@@ -92,7 +92,7 @@ $pdf->setImageScale(PDF_IMAGE_SCALE_RATIO);
 $pdf->setLanguageArray($l);
 $pdf->SetFont('helvetica', '', 12);
 
-  include '/srv/http/feastdb/include/config/mysql_login.php';
+  include '/var/www/feastdb/include/config/mysql_login.php';
   mysql_connect("localhost", $mysqluser, $mysqlpass);
   mysql_select_db("mowdata");
 

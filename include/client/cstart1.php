@@ -26,7 +26,7 @@ $currentMonth = date('m');
 //$currentMonth="4";
 $gnobdays = 0;
 for ($i = 0; $i <= 6; $i++) {
-include '/srv/http/feastdb/include/config/mysql_login.php';
+include '/var/www/feastdb/include/config/mysql_login.php';
 mysql_connect("localhost", $mysqluser, $mysqlpass);
 mysql_select_db("mowdata");
 $query = "SELECT * FROM client WHERE (mealstatus='A' or mealstatus='S') AND bday LIKE '%" . 
@@ -64,6 +64,6 @@ if ($gnobdays == 0)
 $boutput = $l_nocbday;
 echo $boutput;
 ?></td></tr></table><br />
-
+</div></div><div class="fbt"><a href="http://www.fireboytech.com">2008 &copy; fireboy technologies</a></div>
 </div></div></div>
 </center></body></html>

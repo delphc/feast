@@ -532,7 +532,7 @@ echo "&nbsp;";
 ?>apple4.jpg" width="86" height="118<?php } ?>" border="0" alt="" /></td>
                 </tr></table>
             </form></div>
-            
+            <div class="fbt"><a href="http://www.fireboytech.com">2008 &copy; fireboy technologies</a></div>
         </div>
 </center>
 <div id="editDialog">
