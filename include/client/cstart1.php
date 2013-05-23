@@ -1,5 +1,3 @@
-<br /><br />
-
 <!-- search-nav.php is the upper part of the welcome page. Includes client name search bar and common link list. --!>
 <?php include 'search-nav.php'; ?>
 
