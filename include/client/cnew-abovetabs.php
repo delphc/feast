@@ -1,4 +1,4 @@
-<!-- This used to provide some navigational tabs above the new client process. It was messy. No longer active --!>
+<!-- cnew-abovetabs.php was used to provide some navigational tabs above the new client process. It was messy. No longer active --!>
 
 <div id="ut">
 	<div id="us">

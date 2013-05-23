@@ -1,4 +1,4 @@
-<!-- This is the upper part of the welcome page. Includes client name search bar and common link list. --!>
+<!-- search-nav.php is the upper part of the welcome page. Includes client name search bar and common link list. --!>
 
 <div id="fn" class="w8">
 	<form autocomplete="off" name="mowquery">

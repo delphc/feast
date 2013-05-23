@@ -1,4 +1,4 @@
-<!-- This is a table summarizing the client birthdays for the week. --!>
+<!-- birthdays-table.php is a table summarizing the client birthdays for the week. --!>
 <div id="ct">
 		<table width="100%" border="0" cellpadding="0" cellspacing="0" style="clear:left">
 			<tr>
