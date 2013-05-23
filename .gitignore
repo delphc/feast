@@ -3,3 +3,4 @@
 include/config/mysql_login.php
 public/vol2/
 public/tcpdf/
+.gitignore
