@@ -387,6 +387,9 @@ function Select_Value_Set(SelectName, rNo, Value) {
 <link type="text/css" rel="stylesheet" href="theme/default/c1.css" /><?php 
 }
 ?></head>
+
+
+<!-- Here at last, the page actually begins --!>
 <body bgcolor="#FFFFFF">
 <?php
 include "../include/general/gtop.php"; 
