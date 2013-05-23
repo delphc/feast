@@ -1,24 +1,7 @@
-<?php 
-
-//Top Panel
-
-?><center><div><div id="tp" class="w8" <?php
-
-//echo 'onClick="vPanelDown()"';
-
-echo 'onMouseOver="vPanelOver()" onMouseOut="vPanelOut()"';
-
-?>><div id="fpanel" class="w8" style="height:1px;clear:both;overflow:hidden;">
-<div style="text-align:left;width:200px; float:left; padding:8px 0 0 11px; color: #507F08;"><b>Custom Links</b><br /><?php
-
-    if (trim($usr_settings['cl1name']) != "")
-	echo "<a href=\"" . $usr_settings['customlink1'] . "\" style=\"padding-left:10px;\">" . $usr_settings['cl1name'] . "</a><br />";
-    if (trim($usr_settings['cl2name']) != "")
-	echo "<a href=\"" . $usr_settings['customlink2'] . "\" style=\"padding-left:10px;\">" . $usr_settings['cl2name'] . "</a><br />";
-    if (trim($usr_settings['cl3name']) != "")
-	echo "<a href=\"" . $usr_settings['customlink3'] . "\" style=\"padding-left:10px;\">" . $usr_settings['cl3name'] . "</a><br />";
-
- ?></div><div style="text-align:left;width:200px; float:left; padding:8px 0 0 11px; color: #507F08;"><b>Databases</b><br /><?php
+<center>
+<div id="tp" class="w8" onMouseOver="vPanelOver()" onMouseOut="vPanelOut()">
+<div id="fpanel" class="w8" style="height:1px;clear:both;overflow:hidden;">
+<div style="text-align:left;width:200px; float:left; padding:8px 0 0 11px; color: #507F08;"><b>Databases</b><br /><?php
 
 	echo "<a href=\"client.php\" style=\"padding-left:10px;\">" . "ClientDB" . "</a><br />";
 	echo "<a href=\"vol.php\" style=\"padding-left:10px;\">" . "VolunteerDB" . "</a><br />";
