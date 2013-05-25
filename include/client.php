@@ -466,7 +466,9 @@ include '../include/client/cstart1.php';
   include '../include/client/cshow1.php';
 } elseif ($getDo == "new") {
 include '../include/client/cstartnwentry1.php';
-} elseif ($getDo == "cnew") {
+} 
+// Not used (hopefully)
+elseif ($getDo == "cnew") {
 include '../include/client/cnewentry1.php';
 }
 }

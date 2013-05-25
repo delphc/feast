@@ -6,7 +6,6 @@
 
 		<tr id="ft">
 			<td class="ll"></td>
-			<td class="ml"></td>
 			<td class="mc"></td>
 		</tr>
 
