@@ -60,24 +60,38 @@ include '../include/client/binderpdf.php';
 	echo "<meta HTTP-EQUIV=\"REFRESH\" content=\"0; url=client.php?do=show&mid=" . $hitmid[1] . "\">";
 
 } else {
-?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head><title>FeastDB - Fireboy Technologies</title><meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<head>
+<title>FeastDB - Fireboy Technologies</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+
 <script type="text/javascript" src="js/panel.js"></script>
+
 <?php
 if (($getDo == "unset")||($getDo == "show")){
 
 $panel['showbranches'] = FALSE; 
 //$panel['bstyle'] = "light"; 
 
-?><script type="text/javascript" src="clib/ajax.js"></script>
+?>
+
+<script type="text/javascript" src="clib/ajax.js"></script>
 <script type="text/javascript" src="js/sld.js"></script>
 <script type="text/javascript" src="editor/editor.js"></script>
 <link type="text/css" rel="stylesheet" href="theme/default/nx1.css" />
 <link type="text/css" rel="stylesheet" href="editor/editor.css" />
-<link type="text/css" rel="stylesheet" href="clib/ajax.css" /><?php if(isset($_GET['spec'])){
+<link type="text/css" rel="stylesheet" href="clib/ajax.css" />
+
+
+<?php if(isset($_GET['spec'])){
 	if($_GET['spec'] == "dlvr"){ 
-?><script type="text/javascript" src="clib/ajaxsimple.js"></script>
+?>
+
+<!-- script header for client w/ spec=="dlvr" --!>
+<script type="text/javascript" src="clib/ajaxsimple.js"></script>
 <script type="text/javascript">
 function updateMonth(colNo){
 if(document.getElementById('chk' + colNo).checked == 0) {
@@ -204,9 +218,20 @@ document.getElementById('bDType').style.display = "none";
 document.getElementById('sDType').style.display = "inline";
 	}
 </script>
+
+
+
+
 <?php
 	} elseif($_GET['spec'] == "meal") {
-?><script type="text/javascript">
+?>
+
+
+<!-- script header for client w/ spec=="meal" --!>
+
+
+
+<script type="text/javascript">
 function addText(toWhat, toAdd, byWho) {
 	tArea = document.getElementById(toWhat);
     if(document.getElementById(byWho).checked == true) {
@@ -227,9 +252,16 @@ function billSlct() {
 	document.getElementById('bdiv' + document.getElementById('billTo').value).style.display = 'block';  
 }
 </script>
+
+
 <?php
 	} elseif($_GET['spec'] == "route") {
-		?><script type="text/javascript">
+		?>
+
+
+<!-- script header for client w/ spec=="route" --!>
+
+<script type="text/javascript">
 function switchBx(current,toswitch){
 	nameBxThen = "or_name" + current;
 	nameBxNow = "or_name" + toswitch;
@@ -263,9 +295,16 @@ document.getElementById('oldRoute').style.display = "none";
 document.getElementById('nRoute').style.display = "block";
         }
 
-</script><?php
+</script>
+
+
+<?php
 	}	elseif($_GET['spec'] == "relate"){
-?><script type="text/javascript" src="clib/cwid.js"></script>
+?>
+
+<!-- script header for client w/ spec=="relate" --!>
+
+<script type="text/javascript" src="clib/cwid.js"></script>
 <script type="text/javascript">
 function relDiv() {
   if (document.getElementById('slctRel').selectedIndex < 5) {
@@ -280,12 +319,25 @@ function relDiv() {
         document.getElementById('relHfphone').style.display = 'block';
   }
 }
-</script><?php
+</script>
+
+
+<?php
  }
-  }
-} elseif (($getDo == "create") ||($getDo == "modify")){ ?><link type="text/css" rel="stylesheet" href="theme/default/alr3.css" /><?php
+}
+// end of if with "spec" set
+
+} elseif (($getDo == "create") ||($getDo == "modify")){ ?>
+<!-- script header for client w/ do= create or modify --!>
+<link type="text/css" rel="stylesheet" href="theme/default/alr3.css" />
+
+<?php
 } elseif ($getDo == "cnew"){
-?><link type="text/css" rel="stylesheet" href="theme/default/p2.css" />
+?>
+
+<!-- script header for client w/ do=="cnew" --!>
+
+<link type="text/css" rel="stylesheet" href="theme/default/p2.css" />
 <script type="text/javascript">
 function en_lang(){
 if (document.all || document.getElementById){
@@ -380,13 +432,26 @@ function Select_Value_Set(SelectName, rNo, Value) {
  if (relNo != "4")
  document.getElementById('relform' + relNo).style.display = 'block';
 }
-</script><?php
+</script>
+
+
+<?php
 } else {
-?><script type="text/javascript" src="js/cdefault.js"></script>
+?>
+
+<!-- script header for client, (default?) on new client --!>
+
+<script type="text/javascript" src="js/cdefault.js"></script>
 <script type="text/javascript" src="clib/ncwid.js"></script>
-<link type="text/css" rel="stylesheet" href="theme/default/c1.css" /><?php 
+<link type="text/css" rel="stylesheet" href="theme/default/c1.css" />
+
+
+<?php 
 }
-?></head>
+?>
+
+
+</head>
 
 
 <!-- Here at last, the page actually begins --!>

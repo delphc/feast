@@ -1332,12 +1332,9 @@ $output .= "<input onClick=\"enableSub('cnewhide','unhide')\" type=\"radio\" val
 																																																																							include "../include/client/cnew1.php";
 																																																																							}
 
-																																																																							?></th></tr>
-																																																																					<tr>
+																																																																							?>
+																																																																							</div>
+																																																																							<div class="fbt">
 
-																																																																						<td rowspan="2"><img src="theme/default/p1/apl.gif" width="138"height="150" border="0"alt="FeastDB" /></td>
-
-																																																																						<td class="gr"> </td></tr></table></form></div>
-																																																																		<div class="fbt"><a 
-																																																																				href="http://www.fireboytech.com"></a></div>
-																																																												</div></div></div></center></body></html>
+																																																																						<a href="http://www.fireboytech.com"></a></div>
+																																																																	</div></div></div></center></body></html>
