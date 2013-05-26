@@ -1,7 +1,5 @@
 <!-- start of cc2.php --!>
 <?php
-		if ($_POST['slectNew']=="NEW"){
-
 			//setup database entry info
 			if (isset($_POST['email']))
 				$psemail = mysql_real_escape_string($_POST['email']);
@@ -114,34 +112,6 @@
 														value="1">Hard of Hearing</div>
 											</div></div>
 											<div class="snd"><input type="hidden" name="pass_mid" value="<?php echo $midCl; ?>"><input type="submit" value="Continue &raquo;" /></div><?php
-		} else { ?>
-											<div id="fn" class="w8">
-												<form name="mowcreate" action="?do=show&mid=<?php echo $_POST['slectNew']; ?>" method="post">
-													<table width="100%" border="0" cellpadding="0"cellspacing="0">
-														<tr id="ft">
+		} 
 
-															<td class="ll"> </td>
-
-															<td class="ml"> </td>
-
-															<td class="mc"> </td>
-
-															<td class="rr"> </td>
-														</tr>
-														<tr id="sr">
-
-															<td class="ll">
-																<div style="font-size:13px;padding:0 25px; float:right; width:235px;color:#BBBBBB;">This client exists already.<br />Client creation will be cancelled.<br />&nbsp;</div></td>
-
-															<td class="gr"><img src="theme/default/p1/arw.gif" width="7" height="15" border="0" alt="" /></td>
-															<th class="gd" rowspan="2" colspan="2">
-																<div id="nf"><div class="gtle">Continue to the existing client profile 
-																		for <b><?php echo $_POST['f_name'] . " " . $_POST['l_name']; ?>.</b></div>
-																	<div 
-																		style="height:90px;width:350px;padding-top:40px;clear:both;text-align:right;">
-																		&nbsp;</div></div></div>
-																		<div class="snd"><input type="submit" value="Continue &raquo;" /></div>
-
-</div>
-
-<?php } ?>
+?>

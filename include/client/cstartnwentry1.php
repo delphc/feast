@@ -13,7 +13,6 @@ $bprovider = "SR 20922";
 
 <!-- Beginning of cstartnewentry1.php --!>
 <?php
-//
 if (! isset($_GET['cc'])) {
 	include "../include/client/cnew1.php";
 } else { 
@@ -49,8 +48,42 @@ if (! isset($_GET['cc'])) {
 }
 
 ?>
-																																																																							</div>
-																																																																							<div class="fbt">
+<div id="fn" class="w8">
 
-																																																																						<a href="http://www.fireboytech.com"></a></div>
-																																																																	</div></div></div></center></body></html>
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+		<tr id="ft">
+			<td style="width: 300px; border-top: 1px solid #000;"></td>
+			<td class="mc"></td>
+		</tr>
+
+		<tr id="sr">
+			<td class="ll" style="font-size:13px;padding:0 25px; float:right; width:210px;color:#BBBBBB;">
+				<!-- Instruction section of CNEW's --!>
+				<?php ccComment(); ?>
+
+			</td>
+
+			<th class="gd" rowspan="2" colspan="2">
+				<div id="nf">
+				<!-- Form section of CNEW's --!>
+				<?php ccForm(); ?>
+				</div>
+			</th>
+		</tr>
+
+		<tr>
+
+			<td rowspan="2"><img src="theme/default/p1/apl.gif" width="138" height="150" border="0" alt="FeastDB" /></td>
+
+		</tr>
+
+	</table>
+
+</div>
+
+
+<!-- footer included in cstartnwentry1.php --!>
+<div class="fbt">
+	<a href="http://www.fireboytech.com"></a></div>
+</div></div></div></center></body></html>
