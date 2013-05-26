@@ -8,7 +8,15 @@
 
 		//Add the info from the last page to the client database
 		mysql_query($query);//  or echo(mysql_error());
+?>
 
+<?php function ccComment() { ?>
+Let's enter information that will be helpful when delivering meals.
+<?php } ?>
+
+<?php function ccForm() { ?>
+<?php $pass_mid = $_POST['pass_mid']; ?>
+<?php
 		//Find any one else on the same route
 		$query = "SELECT * FROM client WHERE dRoute LIKE '" . $_POST['routen'] . "' AND mealstatus='A' ORDER BY dStop ASC";
 		$result = mysql_query($query);// or echo(mysql_error());
@@ -46,34 +54,18 @@
 			$outputR .= "<input type=\"hidden\" name=\"or_stp" . $countR . "\" value=\"" . ($countR) . "\"></div>";
 		}
 ?>
-																														<div id="fn" class="w8">
-																															<form name="mowcreate" action="?do=new&cc=7" method="post">
-																																<table width="100%"
-																																	border="0" cellpadding="0"
-																																	cellspacing="0">
 
-																																	<tr id="ft">
+<form name="mowcreate" action="?do=new&cc=7" method="post">
+	<div class="gtle">Adjust the route order to accomadate this client.</div>
+	<div 
+		style="padding-left:39px">
+		<?php echo $outputR; ?><br />
+	</div>
 
-																																		<td style="width:300px;border-top:1px solid #000;"> </td>
-
-																																		<td class="ml"> </td>
-
-																																		<td class="mc"> </td>
-
-																																		<td class="rr"> </td>
-																																	</tr>
-																																	<tr id="sr">
-
-																																		<td>
-																																			<div style="font-size:13px;padding:0 25px; float:right; width:200px;color:#BBBBBB;">Lets enter information that will help when
-																																				delivering the meals.<br />&nbsp;</div></td>
-
-																																		<td class="gr"><img src="theme/default/p1/arw.gif" width="7" height="15" border="0" alt="" /></td>
-																																		<th class="gd" rowspan="2" colspan="2">
-																																			<div id="nf"><div class="gtle">Adjust the route order to accomadate this client.</div></div><div 
-																																				style="padding-left:39px">
-																																				<?php echo $outputR; ?><br /></div>
-
-																																			<div class="snd"><input type="hidden" name="noStops" value="<?php echo $nMid; ?>">
-																																			<input type="hidden" name="pass_mid" value="<?php echo $pass_mid; ?>"><input type="submit" value="Continue &raquo;" /></div>
-</div>
+	<div class="snd">
+		<input type="hidden" name="noStops" value="<?php echo $nMid; ?>">
+		<input type="hidden" name="pass_mid" value="<?php echo $pass_mid; ?>" />
+		<input type="submit" value="Continue &raquo;" />
+	</div>
+</form>
+<?php } ?>

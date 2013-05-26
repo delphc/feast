@@ -22,147 +22,86 @@
 		mysql_query($query);//  or echo(mysql_error());
 
 ?>
-																																								<div id="fn" class="w8">
-																																									<form name="mowcreate" action="?do=new&cc=9" method="post">
-																																										<table width="100%"
-																																											border="0" cellpadding="0"
-																																											cellspacing="0">
 
-																																											<tr id="ft">
+<?php function ccComment() { ?>
+Now, setup the selected meal options and side dishes.
+<?php } ?>
 
-																																												<td style="width:300px;border-top:1px solid #000;"> </td>
-
-																																												<td class="ml"> </td>
-
-																																												<td class="mc"> </td>
-
-																																												<td class="rr"> </td>
-																																											</tr>
-																																											<tr id="sr">
-
-																																												<td>
-																																													<div style="font-size:13px;padding:0 25px; float:right; width:200px;color:#BBBBBB;">Now, setup the selected meal options and 
-																																														side dishes.<br 
-																																														/>&nbsp;</div></td>
-
-																																												<td class="gr"><img src="theme/default/p1/arw.gif" width="7" height="15" border="0" alt="" /></td>
-																																												<th class="gd" rowspan="2" colspan="2">
-																																													<div id="nf"><div class="gtle">
-																																															<table class="inpt">
-
-																																																<tr>
-																																																	<td>How many meals (by default) should be delivered?</td>
-
-																																																	<td style="width:135px"><select style="width:35px;margin-right:2px" name="nmeals">
-
-																																																			<option>1</option>
-
-																																																			<option>2</option>
-
-																																																			<option>3</option>
-
-																																																			<option>4</option>
-																																																</select></td></tr>
-
-																																																<tr>
-																																																	<td>How many fruit salads?</td>     
-
-																																																	<td><select style="width:35px;margin-right:2px" name="nsf">
-
-																																																			<option>0</option>
-
-																																																			<option>1</option>
-
-																																																			<option>2</option>
-
-																																																			<option>3</option>
-
-																																																			<option>4</option>
-																																																</select></td></tr>
-
-																																																<tr>
-																																																	<td>How many green salads?</td>
-
-																																																	<td><select style="width:35px;margin-right:2px" name="ngs">
-
-																																																			<option>0</option>
-
-																																																			<option>1</option>
-
-																																																			<option>2</option>
-
-																																																			<option>3</option>
-
-																																																			<option>4</option>
-																																																</select></td></tr>
-
-																																																<tr>
-																																																	<td>How many deserts?</td>
-
-																																																	<td><select style="width:35px;margin-right:2px" name="nds">
-
-																																																			<option>0</option>
-
-																																																			<option>1</option>
-
-																																																			<option>2</option>
-
-																																																			<option>3</option>
-
-																																																			<option>4</option>
-																																																</select></td></tr>
-
-																																																<tr>
-																																																	<td>How many diabetic deserts?</td>
-
-																																																	<td><select style="width:35px;margin-right:2px" name="ndd">
-
-																																																			<option>0</option>
-
-																																																			<option>1</option>
-
-																																																			<option>2</option>
-
-																																																			<option>3</option>
-
-																																																			<option>4</option>
-																																																</select></td></tr>
-
-																																																<tr>
-																																																	<td>How many puddings?</td>
-
-																																																	<td><select style="width:35px;margin-right:2px" name="npd">
-
-																																																			<option>0</option>
-
-																																																			<option>1</option>
-
-																																																			<option>2</option>
-
-																																																			<option>3</option>
-
-																																																			<option>4</option>
-																																																</select></td></tr>
-
-																																																<tr>
-																																																	<td>Should the client receive the Gazette?</td>
-
-																																																	<td><select style="width:45px;margin-right:2px" name="ngz">
-
-																																																			<option value="0">no</option>
-
-																																																			<option value="1">yes</option>
-																																																</select></td></tr>
-
-																																																<tr>
-																																																	<td>Does the client receive vegetable baskets?</td>
-
-																																																	<td><select style="width:45px;margin-right:2px" name="nvb">
-
-																																																			<option value="0">no</option>
-
-																																																			<option value="1">yes</option>
-																																																</select></td></tr>
-																																													</table></div></div>
-																																													<div class="snd"><input type="hidden" name="pass_mid" value="<?php echo $pass_mid; ?>"><input type="submit" value="Continue &raquo;" /></div>
-</div>
+<?php function ccForm() { ?>
+<?php $pass_mid = $_POST['pass_mid']; ?>
+<form name="mowcreate" action="?do=new&cc=9" method="post">
+	<div class="gtle">
+		<table class="inpt">
+			<tr>
+				<td>How many meals (by default) should be delivered?</td>
+				<td style="width:135px"><select style="width:35px;margin-right:2px" name="nmeals">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+			</select></td></tr>
+			<tr>
+				<td>How many fruit salads?</td>     
+				<td><select style="width:35px;margin-right:2px" name="nsf">
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+			</select></td></tr>
+			<tr>
+				<td>How many green salads?</td>
+				<td><select style="width:35px;margin-right:2px" name="ngs">
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+			</select></td></tr>
+			<tr>
+				<td>How many deserts?</td>
+				<td><select style="width:35px;margin-right:2px" name="nds">
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+			</select></td></tr>
+			<tr>
+				<td>How many diabetic deserts?</td>
+				<td><select style="width:35px;margin-right:2px" name="ndd">
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+			</select></td></tr>
+			<tr>
+				<td>How many puddings?</td>
+				<td><select style="width:35px;margin-right:2px" name="npd">
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+			</select></td></tr>
+			<tr>
+				<td>Should the client receive the Gazette?</td>
+				<td><select style="width:45px;margin-right:2px" name="ngz">
+						<option value="0">no</option>
+						<option value="1">yes</option>
+			</select></td></tr>
+			<tr>
+				<td>Does the client receive vegetable baskets?</td>
+				<td><select style="width:45px;margin-right:2px" name="nvb">
+						<option value="0">no</option>
+						<option value="1">yes</option>
+			</select></td></tr>
+		</table>
+	</div>
+	<div class="snd">
+		<input type="hidden" name="pass_mid" value="<?php echo $pass_mid; ?>" />
+		<input type="submit" value="Continue &raquo;" />
+	</div>
+</form>
+<?php } ?>

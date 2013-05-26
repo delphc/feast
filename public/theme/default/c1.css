@@ -47,11 +47,11 @@ li.sp b span {line-height:6px;color: #507F08}
 #nf {color:#fff; font-size:12px;line-height:18px;font-weight:normal}
 #nf input, textarea {border:1px solid #49630B;background:#BADD78;font-size:8pt;margin-bottom:1px}
 #nf select {border:1px solid #49630B;background:#BADD78;font-size:8pt;margin-bottom:1px}
-#nf select[disabled] {border:1px solid #456F06; background: transparent;color:#507F08;}
+#nf select[disabled] {border:1px solid #456F06; background: #aaa;color:#507F08;}
 #nf input:hover {border-color:#000;}
 #nf input:focus {border:1px solid #fff;background: #BADD78}
 #nf textarea:focus {border:1px solid #fff;background: #BADD78}
-#nf input[disabled] {border:1px solid #456F06; background: transparent;color:#507F08;}
+#nf input[disabled] {border:1px solid #456F06; background: #7c4;color:#241;}
 input.i2 {width:25px}
 input.i3 {width:30px}
 input.i5 {width:50px}
@@ -85,7 +85,7 @@ table.relshw tr.odd td{background:#456F06}
 table.relshw td {padding:2px 7px 2px 8px}
 .gtle {padding: 0 20px 10px; }
 div.cntr4 {clear:both; width:388px; padding:4px 0 9px;text-align:center;}
-.nfbx input, textarea {border:1px solid #49630B;background:#BADD78;font-size:8pt;margin-bottom:1px}
+.nfbx input, textarea {border:1px solid #49630B;background:#BADD78;font-size:8pt;margin-bottom:1px; color: #111;}
 .or_box {width:397px;background:transparent;clear:both; text-align:right;padding:5px}
 .or_box:hover {background:#87C313}
 .or_box input {background:transparent;color:#fff;border:none;text-align:right;width:190px;cursor:default;}

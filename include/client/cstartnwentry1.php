@@ -12,6 +12,7 @@ $bprovider = "SR 20922";
 ?>
 
 <!-- Beginning of cstartnewentry1.php --!>
+
 <?php
 if (! isset($_GET['cc'])) {
 	include "../include/client/cnew1.php";
@@ -83,7 +84,7 @@ if (! isset($_GET['cc'])) {
 </div>
 
 
-<!-- footer included in cstartnwentry1.php --!>
-<div class="fbt">
-	<a href="http://www.fireboytech.com"></a></div>
-</div></div></div></center></body></html>
+</div></div></div>
+</center>
+</body>
+</html>
