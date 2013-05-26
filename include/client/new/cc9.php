@@ -37,7 +37,7 @@
 			$_POST['ngz'] . "', dSatSidevb='" . $_POST['nvb'] . "', dSatSidevz='" . $_POST['ngz']  . 
 			"' WHERE mid = " . $pass_mid;
 		//Add the info from the last page to the client database
-		mysql_query($query) or die(mysql_error() . "\n" . $query);
+		mysql_query($query) or die(mysql_error() . $query);
 
 ?>
 
